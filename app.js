@@ -31,6 +31,8 @@ arrayToObject();
 
 totalComp(employeeObject);
 
+prettyfi(employeeObject);
+
 console.log(employeeObject);
 
 function sti(object){
@@ -69,4 +71,12 @@ function totalComp(name){
 
 }
 return employeeObject.totalSal;
+}
+function prettyfi(number){
+  for(var i = 0; i<employees.length; i++){
+    number.bonusPercent[i] = number.bonusPercent[i]*100 +"%";
+    number.totalSal[i] = "$" + number.totalSal[i];
+}
+return number.bonusPercent;
+return number.totalSal;
 }
